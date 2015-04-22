@@ -1,0 +1,9 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="myfirstui5project.ActionSheet"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<l:VerticalLayout class="marginVerticalContent" width="100%">
+		<l:content>
+			<Button text="Open Action Sheet" press="handleopen"></Button>
+		</l:content>
+	</l:VerticalLayout>
+</core:View>
