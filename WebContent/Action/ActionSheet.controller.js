@@ -1,4 +1,4 @@
-sap.ui.controller("myfirstui5project.ActionSheet", {
+sap.ui.controller("Action.ActionSheet", {
 
 	handleopen : function(oEvent) {
 		var oButton = oEvent.getSource();
@@ -6,11 +6,16 @@ sap.ui.controller("myfirstui5project.ActionSheet", {
 		// create action sheet only one
 		if (!this._actionSheet) {
 			this._actionSheet = sap.ui.xmlfragment(
-					"myfirstui5project.ActionSheet", this);
+					"Action.ActionSheet", this);
 			this.getView().addDependent(this._actionSheet);
 		}
 
 		this._actionSheet.openBy(oButton);
+	},
+	
+	handleReject : function(oEvent) {
+		
+		alert("Reject Clicked");
 	}
 
 });

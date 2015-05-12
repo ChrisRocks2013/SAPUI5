@@ -12,9 +12,9 @@
 		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
 
 		<script>
-				sap.ui.localResources("myfirstui5project");
+				sap.ui.localResources("Action");
 				var app = new sap.m.App({initialPage:"idActionSheet1"});
-				var page = sap.ui.view({id:"idActionSheet1", viewName:"myfirstui5project.ActionSheet", type:sap.ui.core.mvc.ViewType.XML});
+				var page = sap.ui.view({id:"idActionSheet1", viewName:"Action.ActionSheet", type:sap.ui.core.mvc.ViewType.XML});
 				app.addPage(page);
 				app.placeAt("content");
 		</script>
